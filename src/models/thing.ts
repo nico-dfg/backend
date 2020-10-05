@@ -7,7 +7,7 @@ export interface ThingInterface extends Document {
     imageUrl: string,
     userId: string,
     price: number
-}
+};
 
 const thingSchema = new Schema({
     title: { type: String, required: true },
@@ -15,6 +15,6 @@ const thingSchema = new Schema({
     imageUrl: { type: String, required: true },
     userId: { type: String, required: true },
     price: { type: Number, required: true },
-})
+});
 
-export default moongose.model<ThingInterface>("Thing", thingSchema)
+export default moongose.model<ThingInterface>("Thing", thingSchema);
